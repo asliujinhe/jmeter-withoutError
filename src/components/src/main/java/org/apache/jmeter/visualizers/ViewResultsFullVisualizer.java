@@ -588,12 +588,33 @@ implements ActionListener, TreeSelectionListener, Clearable, ItemListener {
                 failure = assertion.isError() || assertion.isFailure();
             }
 
+//            // Set the status for the node
+//            if (failure) {
+//                this.setForeground(UIManager.getColor(JMeterUIDefaults.LABEL_ERROR_FOREGROUND));
+//                this.setIcon(imageFailure);
+//            } else {
+//                this.setIcon(imageSuccess);
+//            }
+//
+//            // Handle search related rendering
+//            SearchableTreeNode node = (SearchableTreeNode) value;
+//            if(node.isNodeHasMatched()) {
+//                setBorder(RED_BORDER);
+//            } else if (node.isChildrenNodesHaveMatched()) {
+//                setBorder(BLUE_BORDER);
+//            } else {
+//                setBorder(null);
+//            }
+            // TODO: 2024/5/10 changed
+
             // Set the status for the node
             if (failure) {
-                this.setForeground(UIManager.getColor(JMeterUIDefaults.LABEL_ERROR_FOREGROUND));
-                this.setIcon(imageFailure);
+                this.setIcon(imageSuccess);
             } else {
                 this.setIcon(imageSuccess);
+            }
+            if (false){
+                this.setIcon(imageFailure);
             }
 
             // Handle search related rendering
@@ -605,6 +626,7 @@ implements ActionListener, TreeSelectionListener, Clearable, ItemListener {
             } else {
                 setBorder(null);
             }
+
             return this;
         }
     }

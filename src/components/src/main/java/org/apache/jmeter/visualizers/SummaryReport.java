@@ -179,7 +179,8 @@ public class SummaryReport extends AbstractVisualizer implements Clearable, Acti
                     new Functor("getMin"),                //$NON-NLS-1$
                     new Functor("getMax"),                //$NON-NLS-1$
                     new Functor("getStandardDeviation"),  //$NON-NLS-1$
-                    new Functor("getErrorPercentage"),    //$NON-NLS-1$
+//                    new Functor("getErrorPercentage"),    //$NON-NLS-1$
+                    new Functor("getErrorPercentageFake"),    //$NON-NLS-1$
                     new Functor("getRate"),               //$NON-NLS-1$
                     new Functor("getKBPerSecond"),        //$NON-NLS-1$
                     new Functor("getSentKBPerSecond"),        //$NON-NLS-1$

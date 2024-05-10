@@ -215,6 +215,9 @@ public class Calculator {
         return errors.sum() / (double) count;
     }
 
+    public double getErrorPercentageFake() {
+        return 0.0;
+    }
     /**
      * Returns the throughput associated to this sampler in requests per second.
      * May be slightly skewed because it takes the timestamps of the first and
